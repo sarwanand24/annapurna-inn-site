@@ -1,0 +1,185 @@
+export interface Package {
+  id: string;
+  name: string;
+  type: 'Honeymoon' | 'Weekend' | 'Corporate';
+  description: string;
+  price: number;
+  originalPrice?: number;
+  duration: string;
+  image: string;
+  inclusions: string[];
+  highlights: string[];
+  rating: number;
+  reviewCount: number;
+  validUntil: string;
+}
+
+export const packages: Package[] = [
+  {
+    id: 'P001',
+    name: 'Romantic Honeymoon Escape',
+    type: 'Honeymoon',
+    description: 'Create unforgettable memories with our specially curated honeymoon package',
+    price: 34999,
+    originalPrice: 44999,
+    duration: '3 Days / 2 Nights',
+    image: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg',
+    inclusions: [
+      'Honeymoon Suite Accommodation',
+      'Candlelight Dinner',
+      'Couples Spa Treatment',
+      'Complimentary Champagne',
+      'Flower Decoration',
+      'All Meals Included',
+      'Airport Transfers',
+    ],
+    highlights: [
+      'Private Balcony with Mountain View',
+      'Personalized Service',
+      'Late Checkout',
+      'Special Room Decoration',
+    ],
+    rating: 4.9,
+    reviewCount: 156,
+    validUntil: '2026-12-31',
+  },
+  {
+    id: 'P002',
+    name: 'Luxury Honeymoon Paradise',
+    type: 'Honeymoon',
+    description: 'Ultimate luxury honeymoon experience with premium amenities',
+    price: 54999,
+    originalPrice: 69999,
+    duration: '5 Days / 4 Nights',
+    image: 'https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg',
+    inclusions: [
+      'Royal Heritage Suite',
+      'Daily Breakfast in Bed',
+      'Couples Spa Package',
+      'Private Dining Experiences',
+      'Champagne & Chocolates',
+      'Romantic Turndown Service',
+      'All Meals & Beverages',
+      'Airport Transfers',
+    ],
+    highlights: [
+      'Private Terrace',
+      'Butler Service',
+      'Photoshoot Session',
+      'Surprise Arrangements',
+    ],
+    rating: 5.0,
+    reviewCount: 89,
+    validUntil: '2026-12-31',
+  },
+  {
+    id: 'P003',
+    name: 'Weekend Getaway',
+    type: 'Weekend',
+    description: 'Perfect quick escape from city life with all comforts',
+    price: 14999,
+    originalPrice: 18999,
+    duration: '2 Days / 1 Night',
+    image: 'https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg',
+    inclusions: [
+      'Deluxe Room Stay',
+      'Breakfast & Dinner',
+      'Welcome Drink',
+      'Access to All Facilities',
+      'Early Check-in',
+    ],
+    highlights: [
+      'Pool Access',
+      'Garden Walk',
+      'Complimentary WiFi',
+      'Flexible Timings',
+    ],
+    rating: 4.6,
+    reviewCount: 234,
+    validUntil: '2026-12-31',
+  },
+  {
+    id: 'P004',
+    name: 'Extended Weekend Retreat',
+    type: 'Weekend',
+    description: 'Rejuvenate with our extended weekend package',
+    price: 24999,
+    originalPrice: 31999,
+    duration: '3 Days / 2 Nights',
+    image: 'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg',
+    inclusions: [
+      'Premium Room',
+      'All Meals Included',
+      'Spa Session',
+      'Activities & Entertainment',
+      'Welcome Amenities',
+      'Late Checkout',
+    ],
+    highlights: [
+      'Yoga Sessions',
+      'Nature Walks',
+      'Cultural Programs',
+      'Bonfire Evening',
+    ],
+    rating: 4.7,
+    reviewCount: 178,
+    validUntil: '2026-12-31',
+  },
+  {
+    id: 'P005',
+    name: 'Corporate Team Retreat',
+    type: 'Corporate',
+    description: 'Perfect venue for team building and corporate events',
+    price: 44999,
+    originalPrice: 54999,
+    duration: '2 Days / 1 Night (10 Pax)',
+    image: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg',
+    inclusions: [
+      'Multiple Rooms',
+      'Conference Hall',
+      'AV Equipment',
+      'All Meals',
+      'Tea/Coffee',
+      'Team Building Activities',
+      'Dedicated Event Manager',
+    ],
+    highlights: [
+      'High-Speed Internet',
+      'Business Center',
+      'Flexible Spaces',
+      'Outdoor Activities',
+    ],
+    rating: 4.8,
+    reviewCount: 67,
+    validUntil: '2026-12-31',
+  },
+  {
+    id: 'P006',
+    name: 'Executive Corporate Stay',
+    type: 'Corporate',
+    description: 'Premium corporate package for business meetings and stays',
+    price: 89999,
+    originalPrice: 109999,
+    duration: '3 Days / 2 Nights (20 Pax)',
+    image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg',
+    inclusions: [
+      'Executive Rooms',
+      'Multiple Meeting Spaces',
+      'Full AV Setup',
+      'All Meals & Refreshments',
+      'Business Services',
+      'Airport Transfers',
+      'Recreation Activities',
+      'Event Coordination',
+    ],
+    highlights: [
+      'Customizable Spaces',
+      'Tech Support',
+      'VIP Service',
+      'Networking Events',
+    ],
+    rating: 4.9,
+    reviewCount: 45,
+    validUntil: '2026-12-31',
+  },
+];
